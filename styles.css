@@ -1,0 +1,187 @@
+/* Importa a fonte Chakra Petch do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* Estiliza o corpo da página */
+body {
+    font-family: "Chakra Petch", sans-serif; /* Define a fonte padrão */
+    background-color: white; /* Cor de fundo da página */
+    display: flex; /* Usa Flexbox para layout */
+    flex-direction: column; /* Alinha os itens na vertical */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    justify-content: center; /* Centraliza os itens verticalmente */
+    height: 100vh; /* Preenche a altura total da viewport */
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o padding padrão */
+    background-image: url('imagens/telaprincipal.jfif'); /* Define a imagem de fundo como sendo o arquivo 'imagem1.jfif' */
+    background-size: cover; /* Faz com que a imagem cubra toda a área, ajustando-se proporcionalmente para evitar distorções */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    background-position: center; /* Centraliza a imagem no fundo */
+}
+
+/* Estiliza os títulos h1 */
+h1 {
+    font-size: 2.5rem; /* Tamanho da fonte */
+    text-align: center; /* Alinha o texto ao centro */
+    letter-spacing: 0.4rem; /* Espaçamento entre letras */
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); /* Cria um gradiente linear de cores do arco-íris, indo da esquerda para a direita. */
+    -webkit-background-clip: text; /* Especifica que o gradiente de fundo deve ser aplicado apenas ao texto. */
+    background-clip: text; /* Especifica que o gradiente de fundo deve ser aplicado apenas ao texto. */
+    -webkit-text-fill-color: transparent; /* Torna o texto transparente, permitindo que o gradiente seja visível. */
+    -moz-text-fill-color: transparent; /* Torna o texto transparente para navegadores Firefox. */
+    text-shadow: 2px 3px 0 gold; /* Adiciona uma sombra no texto, criando uma borda. */
+}
+
+/* Estiliza as seções da página */
+section {
+    display: flex; /* Usa Flexbox para layout */
+    flex-direction: column; /* Alinha os itens na vertical */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    margin-bottom: 3rem; /* Espaçamento abaixo de cada seção */
+}
+
+/* Estiliza os inputs dentro das seções */
+section input {
+    width: 30rem; /* Largura dos inputs */
+    border: none; /* Remove a borda padrão */
+    padding: 1rem; /* Espaçamento interno */
+    border-radius: 1.5rem; /* Borda arredondada */
+    margin-bottom: 1rem; /* Espaçamento abaixo dos inputs */
+    color: black; /* Cor do texto */
+    font-size: 1.2rem; /* Tamanho da fonte */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+}
+
+/* Estiliza os botões dentro das seções */
+section button {
+    padding: 0.8rem 1.2rem; /* Espaçamento interno do botão */
+    border: none; /* Remove a borda padrão */
+    border-radius: 1.5rem; /* Borda arredondada */
+    background-color: darkred; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    font-size: 1.2rem; /* Tamanho da fonte */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+
+/* Adiciona efeito hover ao botão de pesquisa */
+section button:hover {
+    transform: scale(1.1); /* Transforma a escalabilidade do botão */
+    transition: transform 0.3s ease-in-out; /* Cria transformações animadas suaves */
+    background-color: red; /* Muda a cor de fundo ao passar o mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra mais intensa */
+}
+
+/* Estiliza a caixa de resultados da pesquisa */
+.resultados-pesquisa {
+    width: 60rem; /* Largura máxima da caixa de resultados */
+    height: 46vh; /* Altura máxima da caixa de resultados */
+    overflow-y: auto; /* Adiciona rolagem vertical se necessário */
+    margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
+    padding: 1rem; /* Espaçamento interno */
+    border-radius: 0.6rem; /* Borda arredondada */
+}
+
+/* Estiliza cada item de resultado */
+.item-resultado {
+    background: whitesmoke; /* Cor de fundo dos itens */
+    opacity: 0.9; /* Define a opacidade dos itens */
+    border-radius: 0.6rem; /* Borda arredondada */
+    padding: 1rem; /* Espaçamento interno */
+    margin-bottom: 1rem; /* Espaçamento abaixo dos itens */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+/* Estiliza cada imagem do item de resultado */
+.imagem-resultado {
+    width: 25%; /* Define a largura da imagem como 25% da largura do elemento pai. */
+    height: auto; /* Ajusta a altura da imagem automaticamente para manter a proporção. */
+    float: right; /* Alinha a imagem à direita do conteúdo dentro do elemento pai. */
+    margin-left: 20px; /* Adiciona uma margem esquerda de 20 pixels à imagem, criando um espaço entre a imagem e o conteúdo à esquerda. */
+    border-radius: 10px; /* Arredonda os cantos da imagem em 10 pixels, criando um efeito visual mais suave. */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra à imagem com um deslocamento horizontal de 2 pixels, um deslocamento vertical de 2 pixels, um raio de desfoque de 4 pixels e uma cor cinza com 30% de opacidade. */
+}
+
+/* Estiliza os títulos dentro dos itens de resultado */
+.item-resultado h2 {
+    font-size: 1.5rem; /* Tamanho da fonte */
+    color: darkred; /* Cor do texto */
+}
+
+/* Estiliza os títulos dentro dos itens de resultado */
+.item-resultado h3 {
+    font-size: 1.1rem; /* Tamanho da fonte */
+    color: darkgoldenrod; /* Cor do texto */
+}
+
+/* Estiliza os links dentro dos itens de resultado */
+.item-resultado a {
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    color: blue; /* Cor do texto dos links */
+}
+
+/* Estiliza os links quando são passados o mouse sobre */
+.item-resultado a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Estiliza a descrição meta dentro dos itens de resultado */
+.descricao-meta {
+    color: black; /* Cor do texto */
+    margin: 0.5rem 0; /* Margem acima e abaixo */
+    text-align: justify; /* Alinhamento de texto justificado */
+}
+
+/* Estiliza o rodapé da página */
+footer {
+    background-color: #a9a9a9; /* Cor de fundo do rodapé */
+    color: black; /* Cor do texto */
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 0; /* Espaçamento interno */
+    width: 100%; /* Largura total da página */
+    position: absolute; /* Posiciona o rodapé */
+    bottom: 0; /* Alinha ao fundo da página */
+    font-size: 1rem; /* Tamanho da fonte */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3rem; /* Tamanho da fonte em telas menores */
+        letter-spacing: 0.2rem; /* Espaçamento entre letras em telas menores */
+    }
+    section input {
+        width: 25rem; /* Largura dos inputs em telas menores */
+        padding: 0.8rem; /* Espaçamento interno em telas menores */
+    }
+    .resultados-pesquisa {
+        width: 40rem; /* Largura da caixa de resultados em telas menores */
+        height: 40vh; /* Altura da caixa de resultados em telas menores */
+    }
+    .item-resultado h2 {
+        font-size: 1.3rem; /* Tamanho da fonte dos títulos em telas menores */
+    }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem; /* Tamanho da fonte em telas pequenas */
+        letter-spacing: 0.1rem; /* Espaçamento entre letras em telas pequenas */
+    }
+    section input {
+        width: 17rem; /* Largura total dos inputs em telas pequenas */
+    }
+    section button {
+        padding: 0.6rem 1rem; /* Espaçamento interno do botão em telas pequenas */
+        font-size: 0.9rem; /* Tamanho da fonte do botão em telas pequenas */
+    }
+    .resultados-pesquisa {
+        width: 90%; /* Largura da caixa de resultados em telas pequenas */
+        height: 50vh; /* Altura da caixa de resultados em telas pequenas */
+    }
+    .item-resultado h2 {
+        font-size: 1.1rem; /* Tamanho da fonte dos títulos em telas pequenas */
+    }
+    footer {
+        font-size: 0.9rem; /* Tamanho da fonte do rodapé em telas pequenas */
+    }
+}
